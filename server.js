@@ -41,11 +41,11 @@ app.get("/api/v1",async(req,res)=>{
     message: "Server is up and runnig...."
   })
 })
-app.use("/api/v1/auth", userRoutes);
-app.use("/api/v1/profile", profileRoutes);
-app.use("/api/v1/course", courseRoutes);
-app.use("/api/v1/payment", paymentRoutes);
-app.use("/api/v1/reach", contactUsRoute);
+app.use("/api/v2/auth", userRoutes);
+app.use("/api/v2/profile", profileRoutes);
+app.use("/api/v2/course", courseRoutes);
+app.use("/api/v2/payment", paymentRoutes);
+app.use("/api/v2/reach", contactUsRoute);
 
 app.get("/", (req, res) => {
   return res.json({
